@@ -1,1 +1,1 @@
-# sign-up-form
+12/8/22 - I am now beginning the sign up form project as a part of the Intermediate HTML and CSS section of The Odin Project's Javascript track. I will create a simple sign up page, featuring client side form validation.
