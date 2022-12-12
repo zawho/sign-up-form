@@ -1,9 +1,10 @@
 body {
     margin: 0;
+    overflow-y: hidden;
 }
 
-a {
-    color: white;
+.main-container {
+    display: flex;
 }
 
 .logo-container {
@@ -34,4 +35,12 @@ a {
     text-align: center;
     bottom: 2%;
     color: white;
+}
+
+.photo-credit > a {
+    color: white;
+}
+
+.form-row {
+    display: flex;
 }
