@@ -22,13 +22,13 @@
                     <label for="first-name">First Name</label>
                     <input type="text" name="first-name" id="first-name" required>
                     <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="first-name" required>
+                    <input type="text" name="last-name" id="last-name">
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" required>
+                    <label for="phone">Phone Number (Ex. 123-456-7890)</label>
+                    <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                 </div>
                 <div class="form-row">
                     <label for="first-password">Password</label>
