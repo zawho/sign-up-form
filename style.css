@@ -15,7 +15,22 @@ h2 {
 }
 
 h3 {
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+input {
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+#first-name:not(:focus):not(:placeholder-shown):invalid,
+#email:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid rgb(255, 0, 0);
 }
 
 .all-container {
@@ -68,6 +83,11 @@ h3 {
     box-shadow: 2px 8px 10px rgb(129, 167, 129);
 }
 
+.required-note {
+    font-size: 0.8rem;
+    margin: 5px 0px 10px 0px;
+}
+
 .form-row {
     display: flex;
     gap: 30px;
@@ -79,6 +99,10 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+}
+
+.optional {
+    font-size: 0.8rem;
 }
 
 .submit-container {

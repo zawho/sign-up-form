@@ -23,33 +23,34 @@
             <div class="form-container">
                 <form action="" method="get" id="sign-up">
                     <h3>Do you want to believe?</h3>
+                    <div class="required-note">* is a required field</div>
                     <div class="form-row">
                         <div class="input-container">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" required>
+                            <label for="first-name">First Name*</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Dana" required>
                         </div>
                         <div class="input-container">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" placeholder="Scully">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input-container">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" placeholder="DanaS@FBI.gov" required>
                         </div>
                         <div class="input-container">
-                            <label for="phone">Phone Number (Ex. 123-456-7890)</label>
-                            <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input-container">
-                            <label for="first-password">Password</label>
+                            <label for="first-password">Password*</label>
                             <input type="password" name="first-password" id="first-password" required>
                         </div>
                         <div class="input-container">
-                            <label for="confirm-password">Confirm Password</label>
+                            <label for="confirm-password">Confirm Password*</label>
                             <input type="password" name="confirm-password" id="confirm-password" required>
                         </div>
                     </div>
