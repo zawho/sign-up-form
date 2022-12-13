@@ -25,12 +25,25 @@ input {
 
 input:focus {
     border: 2px solid blue;
+    box-shadow: 2px 2px 4px rgb(129, 167, 129);
     outline: none;
 }
 
-#first-name:not(:focus):not(:placeholder-shown):invalid,
-#email:not(:focus):not(:placeholder-shown):invalid {
-    border: 2px solid rgb(255, 0, 0);
+input:not(:focus):not(:placeholder-shown):valid {
+    border: 2px solid green;
+}
+
+#email:not(:focus):not(:placeholder-shown):invalid,
+#phone:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+#email:not(:focus):not(:placeholder-shown):invalid ~ .email-hint {
+    display: block;
+}
+
+#phone:not(:focus):not(:placeholder-shown):invalid ~ .phone-hint {
+    display: block;
 }
 
 .all-container {
@@ -86,6 +99,12 @@ input:focus {
 .required-note {
     font-size: 0.8rem;
     margin: 5px 0px 10px 0px;
+}
+
+.email-hint, .phone-hint {
+    display: none;
+    font-size: 0.8rem;
+    color: red;
 }
 
 .form-row {
