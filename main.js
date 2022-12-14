@@ -21,7 +21,7 @@ function checkPassFirst() {
         firstPass.style.border = '2px solid green';
         confirmPass.style.border = '2px solid green';
         passMsg.style.display = 'none';
-    } else if (firstPass.value == '' && confirmPass.value != '') {
+    } else if (firstPass.value == '' && confirmPass.value != '' || (firstPass.value != confirmPass.value && confirmPass.value != '')) {
         form.addEventListener('submit', stopSubmit);
         firstPass.style.border = '2px solid red';
         confirmPass.style.border = '2px solid red';
