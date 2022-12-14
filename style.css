@@ -21,6 +21,8 @@ h3 {
 input {
     border: 1px solid rgb(193, 193, 193);
     border-radius: 5px;
+    height: 1.7rem;
+    width: 250px;
 }
 
 input:focus {
