@@ -101,7 +101,7 @@ input:not(:focus):not(:placeholder-shown):valid {
     margin: 5px 0px 10px 0px;
 }
 
-.email-hint, .phone-hint {
+.email-hint, .phone-hint, .password-msg {
     display: none;
     font-size: 0.8rem;
     color: red;
