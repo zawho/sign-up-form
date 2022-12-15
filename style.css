@@ -160,10 +160,12 @@ input:not(:focus):not(:placeholder-shown):valid {
 
     h1 {
         margin: 20px 0px;
+        text-align: center;
     }
 
     h2 {
         margin: 0px 0px 20px;
+        text-align: center;
     }
 
     input {
@@ -171,20 +173,24 @@ input:not(:focus):not(:placeholder-shown):valid {
     }
 
     .all-container {
+        position: relative;
+        overflow-x: hidden;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
     }
 
     .main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .logo-container {
         height: 40vh;
         width: 100%;
-        min-width: 500px;
+        min-width: none;
     }
 
     .frog-image {
@@ -193,7 +199,7 @@ input:not(:focus):not(:placeholder-shown):valid {
     }
 
     .form-container {
-        width: auto;
+        width: 100%;
         min-width: none;
         display: flex;
         flex-direction: column;
@@ -226,5 +232,11 @@ input:not(:focus):not(:placeholder-shown):valid {
     .login-container {
         margin-left: 0px;
         padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    input {
+        width: 200px;
     }
 }
