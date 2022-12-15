@@ -95,7 +95,7 @@ input:not(:focus):not(:placeholder-shown):valid {
 
 .form-container {
     background-color: rgb(209, 243, 209);
-    width: 61vw;
+    width: 100vw;
     min-width: 542px;
     padding: 10px 30px 30px;
     box-shadow: 2px 8px 10px rgb(129, 167, 129);
