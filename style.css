@@ -151,3 +151,79 @@ input:not(:focus):not(:placeholder-shown):valid {
 .login-container > a {
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        margin: 20px 0px;
+    }
+
+    h2 {
+        margin: 0px 0px 20px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .all-container {
+        flex-direction: column;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        height: 40vh;
+        width: 100%;
+        min-width: 500px;
+    }
+
+    .frog-image {
+        object-fit: cover;
+        object-position: 50% 24%;
+    }
+
+    .form-container {
+        width: auto;
+        min-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 30px;
+    }
+
+    #sign-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .login-container {
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+}
