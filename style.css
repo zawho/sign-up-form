@@ -241,7 +241,7 @@ input:not(:focus):not(:placeholder-shown):valid {
     }
 }
 
-@media only screen and (max-width: 900px) and (max-height: 570px) {
+@media only screen and (max-height: 570px) and (orientation: landscape) {
     .logo-text {
         display: none;
     }
