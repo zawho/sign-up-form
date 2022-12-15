@@ -11,6 +11,7 @@ function addFocus() {
     this.style.border = '2px solid blue';
 }
 
+//Validation for first password input.
 function checkPassFirst() {
     if (firstPass.value == '' && confirmPass.value == '' || firstPass.value != '' && confirmPass.value == '') {
         firstPass.style.border = '1px solid rgb(193, 193, 193)';
@@ -29,6 +30,7 @@ function checkPassFirst() {
     }
 }
 
+//Validation for password confirmation input.
 function checkPassConfirm() {
     if (firstPass.value == '' && confirmPass.value == '') {
         firstPass.style.border = '1px solid rgb(193, 193, 193)';
